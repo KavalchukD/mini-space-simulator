@@ -1,5 +1,5 @@
 stages:
-  - generateBuildRun
+  - generateAndBuild
 
 variables:
   CMAKE_GENERATOR: "Ninja"
