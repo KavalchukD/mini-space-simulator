@@ -1,0 +1,14 @@
+stages:
+  - generateBuildRun
+
+variables:
+  CMAKE_GENERATOR: "Ninja"
+
+image: leanid/fedora_latest
+
+generateGdt:
+  stage: generateBuildRun
+  script:
+    - cmake .
+    - cmake --build .
+    - ./homework1/hello_bin/hello-bin-dynamic
