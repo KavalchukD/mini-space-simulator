@@ -11,4 +11,4 @@ generateGdt:
   script:
     - cmake .
     - cmake --build .
-    - ./homework1/hello_bin/hello-bin-dynamic
+    - ./game/mini-space-simulator
