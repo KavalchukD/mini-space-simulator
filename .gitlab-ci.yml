@@ -6,7 +6,7 @@ variables:
 
 image: leanid/fedora_latest
 
-generateGdt:
+buildMiniSpaceSimulator:
   stage: generateAndBuild
   script:
     - mkdir build
