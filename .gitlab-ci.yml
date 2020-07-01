@@ -11,4 +11,3 @@ generateGdt:
   script:
     - cmake .
     - cmake --build .
-    - ./game/mini-space-simulator
