@@ -32,6 +32,7 @@ Stabiliz 2 - enable stabilization level 2 (auto stabilization)
 
 ## Usage
 Building and run on Linux:
+
     cd [repositories-folder]
     git clone https://gitlab.com/kavalchuk.d.v/mini-space-simulator.git
     cd mini-space-simulator
@@ -39,7 +40,8 @@ Building and run on Linux:
     cd build
     cmake ..
     cmake --build .
-    ./build/game 
+    ./build/game
+    
 For building on Windows you should use MSVC compiler because mingw doesnt support std::thread.
 The most convenient is using [VCPKG](https://github.com/microsoft/vcpkg).
 For building for Android you should download source files of SDL2.0.12 and also create and fill the file "local.properties". Using Android studio is recommended.
