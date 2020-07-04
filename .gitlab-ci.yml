@@ -4,7 +4,7 @@ stages:
 variables:
   CMAKE_GENERATOR: "Ninja"
 
-image: kavalchukd/fedora_latest
+image: dzmitryASUS/my-runner
 
 buildMiniSpaceSimulator:
   stage: generateAndBuild
