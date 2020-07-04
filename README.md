@@ -26,6 +26,12 @@ Game controls:
 Game control panel:
 - Stabiliz 1 - enable stabilization level 1 (double thrust for rotation in order counter to current rotation order)
 - Stabiliz 2 - enable stabilization level 2 (auto stabilization)
+- Yellow arrow shows current rocket's position
+- Blue arrow shows current rocket's motion direction
+- Purple arrow shows direction to world center
+
+Note: Game physics imply that planets and stars apply gravity attraction force to every object on map exclude stars (plants attract each others). 
+Asteroids and rockets don't attract any objects.
 
 ## Supported platforms
 - Linux
@@ -54,3 +60,69 @@ For building for Android you should download source files of SDL2.0.12 and also 
 ![star](screenshots/star.png)
 ![prebangs](screenshots/prebangs.png)
 ![bangs](screenshots/bangs.png)
+
+## Features
+- "True" gravity
+- Air resistance
+- Realistic control
+- Hand-made micro-sound mixer with implemented stereo
+- Optimized parallax imitation
+- Multicontext shaders
+
+## Dependencies
+Common:
+- CMake 3.16.0+
+- SDL2 2.0.12+
+- OpenGL ES 3.0+/Core 3.3+
+- Dear Imgui v1.77 WIP implemented as source files
+
+Linux:
+- Linux kernel 5.3.0+
+- GCC 9.3.0+
+
+Android:
+- Android 7.0+ (API level 24+)
+- Android SDK 30+
+- Android NDK 21.0.6113669+
+
+Windows:
+Windows 10
+MSVC 19.26.28806.0
+
+Note: you are free to try lower version of dependencies, but only listed ones are tested.
+
+## TODO
+### Firstly:
+- implement enemies logic
+- add goal of the game (win conditions)
+- fix parallax  imitation bug comes from double/float conversion accurasy loss
+- fix android initial bugs (screen position and enabled engines)
+- add game menu
+- add Android touch control
+- add minimap
+
+### Secondary:
+- improve collision detection
+- reimplement sound on OpenAL
+- add level designer tool based on ImGui
+- add rocket, planet, asteroids, stars types
+- add animations for stars, bullets
+- light improving (glare above fire of engines and stars)
+- add falling stars background
+- add healths
+- add damage of rocket's parts
+- add electric shield for rockets
+- add gravitation bombs
+- add multiplayer
+- add mp3 support
+- conduct texture size optimization
+- perfomance optimization
+
+## Acknowledgments
+There are some people which ones I'd like to thanks for:
+- Leanid Chayka     - my teacher, for all my knowledeges about game development
+- Mariya Kosacheva  - my schoolmate at gamedev cources, for plenty advices and review
+- Kavalchuk Helen   - my awesome wife, for user experince and great amount of creative ideas and certainly for supporting me through whole process of development
+
+
+
