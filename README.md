@@ -44,6 +44,7 @@ Building and run on Linux:
     
 For building on Windows you should use MSVC compiler because mingw doesnt support std::thread.
 The most convenient is using [VCPKG](https://github.com/microsoft/vcpkg).
+
 For building for Android you should download source files of SDL2.0.12 and also create and fill the file "local.properties". Using Android studio is recommended.
 
 ## Gallery
