@@ -87,8 +87,8 @@ Android:
 - Android NDK 21.0.6113669+
 
 Windows:
-Windows 10
-MSVC 19.26.28806.0
+- Windows 10
+- MSVC 19.26.28806.0
 
 Note: you are free to try lower version of dependencies, but only listed ones are tested.
 
