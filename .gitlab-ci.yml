@@ -4,7 +4,7 @@ stages:
 variables:
   CMAKE_GENERATOR: "Ninja"
 
-image: kavalchuk.d.v/my-runner
+image: dzmitry/my-runner
 
 buildMiniSpaceSimulator:
   stage: generateAndBuild
