@@ -2,9 +2,10 @@
   
 [![pipeline status](https://gitlab.com/kavalchuk.d.v/mini-space-simulator/badges/master/pipeline.svg)](https://gitlab.com/kavalchuk.d.v/mini-space-simulator/-/commits/master)
 
-Mini space simulator (MSP) - free 2D game about traveling in space on rocket. Based on "almost" realistic physics include gravity and physical-based control of the rocket. 
+Mini space simulator (MSP) - open-source 2D game about traveling in space on rocket. Based on "almost" realistic physics include gravity and physical-based control of the rocket. 
 The goal of game is to last as long as you can in virtual world and and enjoy the process=). I hope you will. 
 Game contains its own tiny engine based on free components such as SDL2, OpenGL, Dear Imgui.
+Project is still in development and any help and ideas about game will be appreciated.
 
 ##Controls
 Ship control based on physical laws therefore your commands just control enabling and disabling engines. Engines apply some force to rocket and rocket moves. 
@@ -102,7 +103,7 @@ Note: you are free to try lower version of dependencies, but only listed ones ar
 - add minimap
 
 ### Secondary:
-- improve collision detection
+- improve collision detection (SAT and etc)
 - reimplement sound on OpenAL
 - add level designer tool based on ImGui
 - add rocket, planet, asteroids, stars types
@@ -123,6 +124,8 @@ There are some people which ones I'd like to thanks for:
 - Leanid Chayka     - my teacher, for all my knowledeges about game development
 - Mariya Kosacheva  - my schoolmate at gamedev cources, for plenty advices and review
 - Kavalchuk Helen   - my awesome wife, for user experince and great amount of creative ideas and certainly for supporting me through whole process of development
+
+The game was designed on gamedev [cources](https://www.it-academy.by/course/c-game-developer/game-developer/).
 
 
 
