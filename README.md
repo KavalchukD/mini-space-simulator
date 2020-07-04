@@ -123,7 +123,8 @@ Note: you are free to try lower version of dependencies, but only listed ones ar
 There are some people which ones I'd like to thanks for:
 - Leanid Chayka     - my teacher, for all my knowledeges about game development
 - Mariya Kosacheva  - my schoolmate at gamedev cources, for plenty advices and review
-- Kavalchuk Helen   - my awesome wife, for user experince and great amount of creative ideas and certainly for supporting me through whole process of development
+And the major contributor:
+- Helen Kavalchuk   - my awesome wife, for user experince and great amount of creative ideas and certainly for supporting me through whole process of development
 
 The game was designed on gamedev [cources](https://www.it-academy.by/course/c-game-developer/game-developer/).
 
