@@ -7,7 +7,7 @@ The goal of game is to last as long as you can in virtual world and and enjoy th
 Game contains its own tiny engine based on free components such as SDL2, OpenGL, Dear Imgui.
 Project is still in development and any help and ideas about game will be appreciated.
 
-##Controls
+## Controls
 Ship control based on physical laws therefore your commands just control enabling and disabling engines. Engines apply some force to rocket and rocket moves. 
 In order to survive you should remember that every objects in game have inertion so you can't just stop moving or rotating in one monent.
 
