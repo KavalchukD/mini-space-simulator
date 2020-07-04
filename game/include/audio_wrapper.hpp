@@ -30,7 +30,7 @@ public:
     static constexpr om::myGlfloat explosionVolume      = 1.0;
 
 private:
-    void checkRocketAudioCongig(const Model::World& world);
+    void checkRocketAudioConfig(const Model::World& world);
     void playBackground();
     void addAllTracks();
     void playOneEvent(const Model::OutEvent& event,

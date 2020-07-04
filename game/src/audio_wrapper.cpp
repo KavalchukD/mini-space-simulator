@@ -15,7 +15,6 @@ void AudioWrapper::addAllTracks()
     m_soundTrackBackground = m_engine.addSoundTrack(pathToSoundTrackBackground);
     m_soundBufferBackground = m_engine.addSoundBuffer(m_soundTrackBackground);
     m_soundBufferBackground->setVolume(backgroundVolume);
-    m_soundBufferBackground->play(om::ISoundBuffer::properties::looped);
 
     m_soundTrackBackgroundGameOver =
         m_engine.addSoundTrack(pathToSoundTrackBackgroundGameOver);
@@ -38,7 +37,7 @@ void AudioWrapper::addAllTracks()
 
 void AudioWrapper::playBackground() {}
 
-void AudioWrapper::checkRocketAudioCongig(const Model::World& world)
+void AudioWrapper::checkRocketAudioConfig(const Model::World& world)
 {
     if (userRocketAudio.rocketPtr != world.userShipPtr)
     {
@@ -245,8 +244,13 @@ void AudioWrapper::playOneEvent(const Model::OutEvent& event,
 
 void AudioWrapper::play(const Model::World& world)
 {
-    m_soundBufferBackgroundGameOver->stop();
-    checkRocketAudioCongig(world);
+    if (userRocketAudio.rocketPtr == nullptr)
+    {
+        m_soundBufferBackgroundGameOver->stop();
+        m_soundBufferBackground->play(om::ISoundBuffer::properties::looped);
+    }
+
+    checkRocketAudioConfig(world);
     playOneShip(userRocketAudio, AudioWrapper::userRocketsVolume);
     for (auto& audioRocket : rocketAudios)
     {
