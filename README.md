@@ -97,6 +97,7 @@ Note: you are free to try lower version of dependencies, but only listed ones ar
 - implement enemies logic
 - add goal of the game (win conditions)
 - fix parallax  imitation bug comes from double/float conversion accurasy loss
+- fix imgui control bug appeared after resizing
 - fix android initial bugs (screen position and enabled engines)
 - add game menu
 - add Android touch control
